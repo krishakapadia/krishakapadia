@@ -2,9 +2,9 @@
 <h3 align="center">ML • Data • Web Dev • Problem Solving</h3>
 
 <p align="center">
-I enjoy exploring ideas, building things that actually work, and learning something new every single day.  
+I enjoy exploring ideas, building things that actually work, and learning something new every day.  
 Most of my projects revolve around AI/ML, full-stack development, and data — but I love experimenting across domains.  
-Always curious, always trying to improve 🚀
+Always curious, always improving 🚀
 </p>
 
 ---
@@ -12,8 +12,8 @@ Always curious, always trying to improve 🚀
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight&rank_icon=github" />
-  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=krishakapadia&layout=compact&theme=tokyonight" />
+  <img height="150" src="assets/stats.svg" alt="GitHub stats" />
+  <img height="150" src="assets/top-langs.svg" alt="Top languages" />
 </p>
 
 ---
@@ -21,7 +21,7 @@ Always curious, always trying to improve 🚀
 ## 🧩 Contribution Graph
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=krishakapadia&theme=tokyo-night&hide_border=true" />
+  <img src="assets/activity-graph.svg" alt="Contribution graph" />
 </p>
 
 ---
@@ -29,14 +29,14 @@ Always curious, always trying to improve 🚀
 ## 🛠️ Tech Stack
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python,cpp,html,css,js,react,nodejs,express,mongodb,mysql,git,github,figma,firebase,bootstrap,flask,tensorflow" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,html,css,js,react,nodejs,express,mongodb,mysql,git,github,figma,firebase,bootstrap,flask,tensorflow" />
 </p>
 
 ---
 
 ## ✨ About Me
 
-- 🌱 Exploring **AI/ML, MERN stack, and applied data science**
+- 🌱 Currently exploring **AI/ML, MERN stack, and applied data science**
 - 💻 Love creating **clean, functional, and intuitive applications**
 - 📈 Interested in **analytics, model building, and backend logic**
 - 🧠 Strengthening **DSA using C++**
@@ -83,7 +83,6 @@ Always curious, always trying to improve 🚀
 ## 📈 Contribution Streak
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=krishakapadia&theme=tokyonight" />
+  <img src="assets/streak.svg" alt="Contribution streak" />
 </p>
 
----
