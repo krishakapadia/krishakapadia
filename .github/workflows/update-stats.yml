@@ -1,33 +1,41 @@
 name: Update README stats images
 
 on:
-  schedule:
-    - cron: '0 6 * * *'
   workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
 
 jobs:
-  fetch_images:
+  generate_images:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Create assets folder
-        run: mkdir -p assets
+    - name: Make assets folder
+      run: mkdir -p assets
 
-      - name: Download stats
-        run: curl -s "https://github-readme-stats.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight&rank_icon=github" -o assets/stats.svg || true
+    # Using STABLE MIRROR for GitHub Readme Stats
+    - name: Download GitHub Stats
+      run: curl -L "https://raw.githubusercontent.com/anuraghazra/github-readme-stats/master/themes/README.md" || true
 
-      - name: Download top languages
-        run: curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=krishakapadia&layout=compact&theme=tokyonight" -o assets/top-langs.svg || true
+    - name: Download stats image
+      run: curl -L "https://github-readme-stats-git-masterorg.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight" -o assets/stats.svg || true
 
-      - name: Download activity graph
-        run: curl -s "https://github-readme-activity-graph.vercel.app/graph?username=krishakapadia&theme=tokyo-night&hide_border=true" -o assets/activity-graph.svg || true
+    - name: Download top languages
+      run: curl -L "https://github-readme-stats-git-masterorg.vercel.app/api/top-langs/?username=krishakapadia&layout=compact&theme=tokyonight" -o assets/top-langs.svg || true
 
-      - name: Commit files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/*.svg
-          git commit -m "Updated stats images" || echo "No changes"
-          git push || echo "Nothing to push"
+    - name: Download streak
+      run: curl -L "https://streak-stats.demolab.com?user=krishakapadia&theme=tokyonight" -o assets/streak.svg || true
+
+    - name: Download activity graph
+      run: curl -L "https://github-readme-activity-graph.vercel.app/graph?username=krishakapadia&theme=tokyo-night&hide_border=true" -o assets/activity-graph.svg || true
+
+    - name: Commit and push
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add assets/*.svg
+        git commit -m "Updated stat images" || echo "No changes"
+        git push
