@@ -1,26 +1,11 @@
-# Hi 👋 I'm Krisha Kapadia
-### ML • Data • Web Dev • Problem Solving
+<h1 align="center">Hi 👋 I'm Krisha Kapadia</h1>
 
-I enjoy exploring ideas, building things that actually work, and learning something new every day.  
-Most of my projects revolve around AI/ML, full-stack development, and data — but I love experimenting across domains.  
-Always curious, always improving 🚀
-
----
-
-## 📌 Pinned Projects
+<h3 align="center">ML • Data • Web Dev • Problem Solving</h3>
 
 <p align="center">
-  <a href="https://github.com/krishakapadia/ipl-data-analysis" target="_blank">
-    <img src="assets/pin-ipl-data-analysis.svg" alt="ipl-data-analysis" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/krishakapadia/Calorie-Tracker" target="_blank">
-    <img src="assets/pin-Calorie-Tracker.svg" alt="Calorie-Tracker" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/krishakapadia/Loan-Approval-Prediction" target="_blank">
-    <img src="assets/pin-Loan-Approval-Prediction.svg" alt="Loan-Approval-Prediction" />
-  </a>
+I enjoy exploring ideas, trying to build things that actually work, and learning something new every single day.  
+Most of my projects revolve around AI/ML, full-stack development, and data — but I love experimenting across domains.  
+Always curious, always trying to improve 🚀
 </p>
 
 ---
@@ -28,24 +13,16 @@ Always curious, always improving 🚀
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="150" src="assets/stats.svg" alt="GitHub stats" />
-  <img height="150" src="assets/top-langs.svg" alt="Top languages" />
+  <img height="150" src="https://github-readme-stats-sigma-five.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight" />
 </p>
+
 
 ---
 
-## 🧩 Contribution Graph
+## 📊 Languages & Activity
 
 <p align="center">
-  <img src="assets/activity-graph.svg" alt="Contribution graph" />
-</p>
-
----
-
-## 📈 Contribution Streak
-
-<p align="center">
-  <img src="assets/streak.svg" alt="Contribution streak" />
+ <img height="150" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=krishakapadia&layout=compact&theme=tokyonight" />
 </p>
 
 ---
@@ -53,20 +30,24 @@ Always curious, always improving 🚀
 ## 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,html,css,js,react,nodejs,express,mongodb,mysql,git,github,figma,firebase,bootstrap,flask,tensorflow" alt="tech icons" />
+  <img src="https://skillicons.dev/icons?i=python" />
+  <img src="https://skillicons.dev/icons?i=cpp" />
+  <img src="https://skillicons.dev/icons?i=html" />
+  <img src="https://skillicons.dev/icons?i=css" />
+  <img src="https://skillicons.dev/icons?i=js" />
+  <img src="https://skillicons.dev/icons?i=react" />
+  <img src="https://skillicons.dev/icons?i=nodejs" />
+  <img src="https://skillicons.dev/icons?i=express" />
+  <img src="https://skillicons.dev/icons?i=mongodb" />
+  <img src="https://skillicons.dev/icons?i=mysql" />
+  <img src="https://skillicons.dev/icons?i=firebase" />
+  <img src="https://skillicons.dev/icons?i=git" />
+  <img src="https://skillicons.dev/icons?i=github" />
+  <img src="https://skillicons.dev/icons?i=figma" />
+  <img src="https://skillicons.dev/icons?i=bootstrap" />
+  <img src="https://skillicons.dev/icons?i=flask" />
+  <img src="https://skillicons.dev/icons?i=tensorflow" />
 </p>
-
----
-
-## ✨ About Me
-
-- 🌱 Currently exploring **AI/ML, MERN stack, and applied data science**  
-- 💻 I enjoy building clean, functional, and intuitive applications  
-- 📈 Interested in analytics, model building, and backend systems  
-- 🧠 Strengthening DSA using C++  
-- 🤝 Open to meaningful collaborations and internship/mentorship opportunities
-
-> _“Keep building. Keep learning. Keep moving forward.”_
 
 ---
 
@@ -74,30 +55,21 @@ Always curious, always improving 🚀
 
 <p align="left">
   <a href="https://www.linkedin.com/in/krishakapadia" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" height="28" alt="LinkedIn"/>
+    <img src="https://skillicons.dev/icons?i=linkedin" height="40"/>
   </a>
   &nbsp;
   <a href="mailto:krishakapadia2204@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" height="28" alt="Email"/>
+    <img src="https://skillicons.dev/icons?i=gmail" height="40"/>
   </a>
 </p>
 
 ---
 
-## ⚙️ Notes (for repo setup)
+## ✨ About Me
 
-- This README expects these files inside the repo's `assets/` folder:
-  - `assets/stats.svg`  
-  - `assets/top-langs.svg`  
-  - `assets/activity-graph.svg`  
-  - `assets/streak.svg`  
-  - `assets/pin-ipl-data-analysis.svg`  
-  - `assets/pin-Calorie-Tracker.svg`  
-  - `assets/pin-Loan-Approval-Prediction.svg`
-
-- If you used the workflow I shared earlier, run it once (Actions → Update README stats images → Run workflow) to generate the `assets/*` files.  
-- If you prefer not to use Actions, you can manually upload SVG files with the exact names above into `assets/`.
+- 🔍 Currently exploring advanced AI/ML techniques and MERN development  
+- 🚀 Love working on projects that challenge my creativity and problem-solving  
+- 🤝 Open to collaborations across AI, data, and full-stack development  
+- 💡 Strengthening DSA skills using C++  
 
 ---
-
-If you want a version without images (no Actions required) or a different visual theme (minimal / pastel / dark-neon), tell me which style and I’ll provide that README file next.
