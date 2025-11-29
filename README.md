@@ -4,7 +4,7 @@
 
 <p align="center">
 I enjoy exploring ideas, trying to build things that actually work, and learning something new every single day.  
-Most of my projects revolve around AI/ML, full-stack development, and data — but I love experimenting across domains.  
+Most of my projects revolve around full-stack development, ML, and data — but I love experimenting across domains.  
 Always curious, always trying to improve 🚀
 </p>
 
@@ -36,8 +36,6 @@ Always curious, always trying to improve 🚀
   <img src="https://skillicons.dev/icons?i=css" />
   <img src="https://skillicons.dev/icons?i=js" />
   <img src="https://skillicons.dev/icons?i=react" />
-  <img src="https://skillicons.dev/icons?i=nodejs" />
-  <img src="https://skillicons.dev/icons?i=express" />
   <img src="https://skillicons.dev/icons?i=mongodb" />
   <img src="https://skillicons.dev/icons?i=mysql" />
   <img src="https://skillicons.dev/icons?i=firebase" />
