@@ -8,34 +8,61 @@ on:
 jobs:
   generate_images:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
-    - name: Make assets folder
-      run: mkdir -p assets
+      - name: Make assets folder
+        run: mkdir -p assets
 
-    # Using STABLE MIRROR for GitHub Readme Stats
-    - name: Download GitHub Stats
-      run: curl -L "https://raw.githubusercontent.com/anuraghazra/github-readme-stats/master/themes/README.md" || true
+      # Main stats & top langs
+      - name: Download GitHub stats
+        run: |
+          curl -L "https://github-readme-stats-git-masterorg.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight&rank_icon=github" -o assets/stats.svg || true
 
-    - name: Download stats image
-      run: curl -L "https://github-readme-stats-git-masterorg.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight" -o assets/stats.svg || true
+      - name: Download Top languages
+        run: |
+          curl -L "https://github-readme-stats-git-masterorg.vercel.app/api/top-langs/?username=krishakapadia&layout=compact&theme=tokyonight" -o assets/top-langs.svg || true
 
-    - name: Download top languages
-      run: curl -L "https://github-readme-stats-git-masterorg.vercel.app/api/top-langs/?username=krishakapadia&layout=compact&theme=tokyonight" -o assets/top-langs.svg || true
+      # Contribution activity graph
+      - name: Download activity graph
+        run: |
+          curl -L "https://github-readme-activity-graph.vercel.app/graph?username=krishakapadia&theme=tokyo-night&hide_border=true" -o assets/activity-graph.svg || true
 
-    - name: Download streak
-      run: curl -L "https://streak-stats.demolab.com?user=krishakapadia&theme=tokyonight" -o assets/streak.svg || true
+      # Streak
+      - name: Download streak
+        run: |
+          curl -L "https://streak-stats.demolab.com?user=krishakapadia&theme=tokyonight" -o assets/streak.svg || true
 
-    - name: Download activity graph
-      run: curl -L "https://github-readme-activity-graph.vercel.app/graph?username=krishakapadia&theme=tokyo-night&hide_border=true" -o assets/activity-graph.svg || true
+      # Pinned project cards (download pin images so pinned area shows reliably)
+      - name: Download pinned card - ipl-data-analysis
+        run: |
+          curl -L "https://github-readme-stats-git-masterorg.vercel.app/api/pin/?username=krishakapadia&repo=ipl-data-analysis&theme=tokyonight" -o assets/pin-ipl-data-analysis.svg || true
 
-    - name: Commit and push
-      run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        git add assets/*.svg
-        git commit -m "Updated stat images" || echo "No changes"
-        git push
+      - name: Download pinned card - Calorie-Tracker
+        run: |
+          curl -L "https://github-readme-stats-git-masterorg.vercel.app/api/pin/?username=krishakapadia&repo=Calorie-Tracker&theme=tokyonight" -o assets/pin-Calorie-Tracker.svg || true
+
+      - name: Download pinned card - Loan-Approval-Prediction
+        run: |
+          curl -L "https://github-readme-stats-git-masterorg.vercel.app/api/pin/?username=krishakapadia&repo=Loan-Approval-Prediction&theme=tokyonight" -o assets/pin-Loan-Approval-Prediction.svg || true
+
+      - name: Ensure non-empty files
+        run: |
+          for f in assets/*.svg; do
+            if [ ! -s "$f" ]; then
+              echo "placeholder for $f" > "$f"
+            fi
+          done
+
+      - name: Commit and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git commit -m "chore: update README stat images" || echo "No changes to commit"
+          git push
