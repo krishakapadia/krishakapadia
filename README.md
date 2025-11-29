@@ -2,7 +2,7 @@
 <h3 align="center">ML • Data • Web Dev • Problem Solving</h3>
 
 <p align="center">
-I enjoy exploring ideas, trying to build things that actually work, and learning something new every single day.  
+I enjoy exploring ideas, building things that actually work, and learning something new every single day.  
 Most of my projects revolve around AI/ML, full-stack development, and data — but I love experimenting across domains.  
 Always curious, always trying to improve 🚀
 </p>
@@ -12,12 +12,16 @@ Always curious, always trying to improve 🚀
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="150" src="https://github-readme-stats.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight" />
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=krishakapadia&show_icons=true&theme=tokyonight&rank_icon=github" />
   <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=krishakapadia&layout=compact&theme=tokyonight" />
 </p>
 
+---
+
+## 🧩 Contribution Graph
+
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=krishakapadia&theme=tokyo-night" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=krishakapadia&theme=tokyo-night&hide_border=true" />
 </p>
 
 ---
@@ -58,6 +62,8 @@ Always curious, always trying to improve 🚀
 
 ## 📌 Pinned Projects
 
+<p align="center">
+
 <a href="https://github.com/krishakapadia/ipl-data-analysis">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=krishakapadia&repo=ipl-data-analysis&theme=tokyonight" />
 </a>
@@ -66,9 +72,11 @@ Always curious, always trying to improve 🚀
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=krishakapadia&repo=Calorie-Tracker&theme=tokyonight" />
 </a>
 
-<a href="https://github.com/krishakapadia/Loan-Approval-Prediction-">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=krishakapadia&repo=Loan-Approval-Prediction-&theme=tokyonight" />
+<a href="https://github.com/krishakapadia/Loan-Approval-Prediction">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=krishakapadia&repo=Loan-Approval-Prediction&theme=tokyonight" />
 </a>
+
+</p>
 
 ---
 
